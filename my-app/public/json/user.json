@@ -1,0 +1,10 @@
+[
+    {
+        "nickname": "user1",
+        "email": "user1@example.com",
+        "phone": "+375291234567",
+        "dob": "2000-01-01",
+        "fullName": "Иван Иванов",
+        "role": "user"
+    }
+]

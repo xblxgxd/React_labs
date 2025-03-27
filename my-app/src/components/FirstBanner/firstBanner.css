@@ -1,0 +1,82 @@
+/*---------Frist---Banner---------------------------------------------------*/
+
+.first-banner {
+    height: 100vh;
+    background: url(../../../public/img/first-banner/main-block-img.jpg);
+    /* height: calc(100vh - 95px); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .first-banner {
+    opacity: 0; /* Start with an invisible element */
+    transform: translateY(20px); /* Start slightly lower */
+    animation: fadeUp 0.6s forwards; /* Apply the fade-up animation */
+  }
+  
+  @keyframes fadeUp {
+    0% {
+      opacity: 0; /* Invisible */
+      transform: translateY(20px); /* Lower position */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Original position */
+    }
+  }
+  
+  .first-banner-title {
+    padding-top: 53px;
+    font-size: 44px;
+    line-height: 51px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .first-banner-subtitle {
+    padding-top: 14px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 18.5px;
+    letter-spacing: 1px;
+  }
+  
+  /* Создаю контейнер оболочку для кнопок  */
+  .first-banner-buttons-container {
+    gap: 10px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .first-banner-buttons-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  /* Делаю из <a> - ССЫЛКИ вид кнопки  */
+  .first-banner-button-link {
+    min-width: 220px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 47px 5px 47px;
+    border-radius: 35px;
+    color: #fff;
+    background-color: #ff4a32;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .first-banner-button-link:hover {
+    background-color: #606060;
+  }
+  
+  
+  
+  

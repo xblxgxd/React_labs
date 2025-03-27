@@ -1,0 +1,114 @@
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  
+  .product-item {
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+  }
+  
+  .product-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .product-title {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .product-price {
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    animation: blink 1s infinite; /* Apply the blink animation */
+    animation-delay: 1s;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      color: orange; /* Start and end with orange */
+    }
+    50% {
+      color: transparent; /* Fade to transparent */
+    }
+  }
+  /* Add the rest of your styles here */
+  
+  .product-old-price {
+    font-size: 14px;
+    color: #666;
+    text-decoration: line-through;
+    margin-left: 5px;
+  }
+  
+  /* Медиа-запросы */
+  @media (max-width: 1200px) {
+    .product-container {
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .product-item {
+      width: 180px;
+    }
+  
+    .product-title {
+      font-size: 14px;
+    }
+  
+    .product-price,
+    .product-old-price {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .product-item {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .product-title {
+      font-size: 16px;
+    }
+  
+    .product-price,
+    .product-old-price {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-title {
+      font-size: 14px;
+    }
+  
+    .product-price,
+    .product-old-price {
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,156 @@
+/*---------Products------------------------------------------------------*/
+.nav_section-products{
+    padding-top: 75px;
+    margin-top: -75px;
+  }
+  .products-container {
+    padding-top: 55px;
+  
+    height: 615px;
+    gap: 20px;
+    background-color: #f5f5f7;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 55px;
+  }
+  
+  .img-for-card-1 {
+    background-image: url(../../../public/img/test/boosted-stealth-bottom_2000x.png);
+  }
+  .img-for-card-2 {
+    background-image: url(../../../public/img/test/boosted-mini-x_1_2000x.png);
+  }
+  .img-for-card-3 {
+    background-image: url(../../../public/img/test/222.png);
+  }
+  .img-for-card-1,
+  .img-for-card-2,
+  .img-for-card-3 {
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 505px;
+    width: 404px;
+    position: static;
+    border-radius: 18px;
+    transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+  }
+  .img-for-card-2:hover {
+    transform: scale(1.02);
+    /* box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);  Оригинал Apple */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color: #18eca58e; */
+  }
+  
+  .img-for-card-1:hover {
+    transform: scale(1.02);
+    /* box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);  Оригинал Apple */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .img-for-card-3:hover {
+    transform: scale(1.02);
+    /* box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);  Оригинал Apple */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .first-text-block-for-card_1,
+  .first-text-block-for-card_2,
+  .first-text-block-for-card_3 {
+    height: 24px;
+    padding-left: 30px;
+    padding-top: 32px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.33337;
+    letter-spacing: -0.01em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica,
+      Arial, sans-serif;
+    font-weight: 600;
+    color: #6e6e73;
+  }
+  .second-text-block-for-card_1,
+  .second-text-block-for-card_2,
+  .second-text-block-for-card_3 {
+    height: 40px;
+    padding-left: 30px;
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue,
+      Helvetica, Arial, sans-serif;
+    color: #1d1d1f;
+    padding-top: 25px;
+    margin-bottom: 30px;
+  }
+  .second-text-block-for-card_2 {
+    height: 5px;
+  }
+  
+  .third-text-block--price-for-card_1,
+  .third-text-block--price-for-card_2,
+  .third-text-block--price-for-card_3 {
+    padding-top: 42px;
+    padding-left: 30px;
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica,
+      Arial, sans-serif;
+    color: #1d1d1f;
+  }
+  
+  
+  
+  @media (max-width: 1120px) {
+    .products-container {
+      padding: 30px 20px;
+      height: auto;
+    }
+    .img-for-card-1,
+    .img-for-card-2,
+    .img-for-card-3 {
+      height: 405px;
+      width: 32%;
+      position: static;
+    }
+  }
+  
+  
+  /* Products Container */
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+  
+  .products-container {
+    gap: 10px;
+  }
+  /* .img-for-card-1,
+  .img-for-card-2,
+  .img-for-card-3 {
+    text-align: center;
+    width: 100%;
+  } */
+  .first-text-block-for-card_1,
+  .first-text-block-for-card_2,
+  .first-text-block-for-card_3 {
+    font-size: 18px;
+  }
+  .second-text-block-for-card_1,
+  .second-text-block-for-card_2,
+  .second-text-block-for-card_3 {
+    font-size: 14px;
+  }
+  .third-text-block--price-for-card_1,
+  .third-text-block--price-for-card_2,
+  .third-text-block--price-for-card_3 {
+    font-size: 12px;
+  }
+  
+  

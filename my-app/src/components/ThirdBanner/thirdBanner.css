@@ -1,0 +1,68 @@
+/*---------THIRD---BANNER---------------------------------------------------*/
+.third-banner-container {
+    height: 100vh;
+    background-image: url(../../../public/img/third-banner/pic-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .third-banner-sub-title-1 {
+    padding-top: 44px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .third-banner-title {
+    padding-top: 11px;
+    font-size: 45px;
+    line-height: 51px;
+    text-align: center;
+    color: #000000;
+  }
+  .third-banner-sub-title-2 {
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #000000;
+  }
+  
+  .third-banner-button-container {
+    text-align: center;
+  }
+  .third-banner-button {
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: #ff4a32;
+    border-radius: 35px;
+    height: 33px;
+    width: 201px;
+  }
+  .third-banner-button-link {
+    color: #fff;
+  }
+  
+  /* .third-banner-button-container {
+      display: flex;
+      justify-content: center;
+  }
+  .third-banner-button {
+      font-weight: 700;
+      margin-top: 20px;
+      background-color: #FF4A32;
+      border-radius: 35px;
+      height: 33px;
+      width: 201px;
+      line-height: 22px;
+  }
+  .third-banner-button-link {
+      color: #FFF;
+  } */
+  
+  @media (max-width: 768px) {
+    .third-banner-container {
+      height: 65vh;
+    }
+  }

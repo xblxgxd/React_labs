@@ -1,0 +1,335 @@
+/*---------Header-notification-----------------------------------------------------*/
+
+.header-notification {
+    height: 29px;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  .header-notification-link {
+    display: inline-block; /* ? FINTD OUT ? */
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: color 1s;
+  }
+  
+  .header-notification-link:hover {
+    color: rgb(28, 227, 101);
+    text-decoration: underline;
+  }
+  
+  /*---------Header------------------------------------------------------*/
+  
+  .header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-left: 11px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 0 10px rgba(41, 44, 61, 0.34);
+    height: 75px;
+    align-items: center;
+  }
+  
+  .header-logo-wrapper {
+    padding: 15px 11px;
+  }
+  
+  .header-logo-link {
+    transition: opacity 0.3s ease-in;
+  }
+  
+  .header-logo {
+    animation: fall 0.6s ease forwards; /* Apply the fall animation */
+  }
+  @keyframes fall {
+    0% {
+      opacity: 0; /* Start as invisible */
+      transform: translateY(-50px); /* Start from above */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* End at original position */
+    }
+  }
+  
+  
+  .header-link {
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .header-link {
+    display: inline-block; /* Allows for width changes */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .header-link:hover {
+    animation: stretch 0.3s forwards; /* Apply the animation on hover */
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scaleX(1); /* Original size */
+    }
+    100% {
+      transform: scaleX(1.5); /* Stretched size */
+    }
+  }
+  .header-link:hover {
+    color: #ff4a32;
+    /* text-decoration: underline; */
+  }
+  
+  .left-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-container ul {
+    display: flex;
+    margin-left: 102px;
+  }
+  
+  .left-container li {
+    padding: 22px 11px;
+  }
+  .header-bottom__user {
+    animation: slideIn 0.6s ease forwards; /* Apply the slide-in animation */
+  }
+  @keyframes slideIn {
+    0% {
+      opacity: 0; /* Start as invisible */
+      transform: translate(50px, 50px); /* Start from bottom right */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+      transform: translate(0, 0); /* End at original position */
+    }
+  }
+  
+  
+  
+  .right-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+  .header-logo {
+    margin-left: 11px;
+    width: 200px;
+    height: 45px;
+  }
+  .user-icon-logo {
+    margin-right: 10px;
+  }
+  
+  /* Header navMenu start */
+  .mobile-menu {
+    display: none;
+  }
+  
+  
+  .mobile-nav-open-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 2rem;
+    color: black;
+    margin-left: 3rem;
+  }
+  
+  .backdrop-container {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .sidenav-container {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidenav-container.open {
+    width: 70%;
+  }
+  
+  .sidenav-container a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin: 10px 0;
+  }
+  
+  .sidenav-container a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav-container .closebtn {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff4a32;
+    padding-right: 1rem;
+  }
+  
+  .sidenav-container .drawer-close-button {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .sidenav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .sidenav-header .right-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px;
+    padding-left: 1rem;
+  }
+  .sidenav-header .right-container svg {
+    fill: white;
+  }
+  /* header sideBar end */
+  
+  @media (max-width: 1120px) {
+    .header .left-container ul {
+      margin-left: 20px;
+    }
+    .header .left-container li {
+      padding: 11px 6px;
+    }
+    .header .left-container li a {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 900px) {
+    .mobile-menu {
+      display: block;
+    }
+    .header .right-container.desktop,
+    .header .header-links-wrapper.desktop {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .sidenav-container.open {
+      width: 100%;
+    }
+  }
+  
+  /* -------------Hover для SVG -------------*/
+  
+  .user-icon-logo {
+    display: inline-block; /* Ensure the icon behaves as a block for transformations */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transitions */
+  }
+  
+  .user-icon-logo:hover {
+    transform: scale(1.2) rotate(15deg); /* Scale up and rotate on hover */
+    filter: brightness(1.2); /* Slightly brighten the icon */
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.3s ease; /* Плавный переход */
+  }
+  .modal.show {
+    display: block; /* Показываем окно */
+    opacity: 1; /* Полная непрозрачность */
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  .cart-icon:hover {
+    fill: red;
+  }
+  
+  .cart-icon {
+    transition: fill 0.5s;
+  }
+  .cart-icon {
+    display: inline-block; /* Make sure it's inline-block for animation */
+    animation: bounce 0.6s forwards; /* Apply the bounce animation */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0); /* Start at the original position */
+    }
+    50% {
+      transform: translateY(-10px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Return to original position */
+    }
+  }

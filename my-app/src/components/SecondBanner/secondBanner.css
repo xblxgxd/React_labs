@@ -1,0 +1,111 @@
+/*---------SECOND---BANNER---------------------------------------------------*/
+
+.second-banner-title {
+    line-height: 36px;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+    transition: color 0.3s ease; 
+  }
+  .second-banner-subtitle {
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    margin-top: 17px;
+    transition: color 0.3s ease; 
+  }
+  .hidden-text {
+    color: transparent; /* Hide the original text */
+  }
+  
+  .encrypted-text {
+    position: absolute; /* Positioning for overlay */
+    left: 0;
+    top: 0;
+    color: black; /* Color of the encrypted text */
+    pointer-events: none; /* Prevent interaction */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  .second-banner-divider-container {
+    display: flex;
+    justify-content: center;
+  }
+  .second-banner-divider {
+    margin-top: 25px;
+    background: #cfcfcf;
+    width: 70px;
+    height: 2px;
+  }
+  
+  /* --------------- */
+  
+  .second-banner-blocks-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 45px 0px 20px;
+  }
+  .second-banner-left {
+    max-width: 580px;
+    width: 100%;
+    height: 580px;
+    background-image: url(../../../public/img/second-banner/img-1.jpg);
+  }
+  
+  .second-banner-left-title {
+    margin-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .second-banner-left-sub-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  
+  .second-banner-right {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 580px;
+    height: 580px;
+    background-image: url(../../../public/img/second-banner/img-2.jpg);
+  }
+  .second-banner-right,
+  .second-banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .second-banner-right-title {
+    margin-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .second-banner-right-sub-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  
+  @media (max-width: 768px) {
+    .second-banner-blocks-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .second-banner-right,
+    .second-banner-left {
+      height: 350px;
+    }
+  }
+  

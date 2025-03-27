@@ -1,0 +1,123 @@
+/*---------advantages----------------------------------------------------*/
+
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 308px;
+  }
+  
+  .advantages-item-1 {
+    height: 257px;
+    width: 330px;
+  }
+  
+  .advantages-logo {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 5px;
+  }
+  .advantages-title {
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 25px;
+  }
+  .advantages-subtitle {
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  
+  .advantages-title,
+  .advantages-subtitle {
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+  }
+  
+  .advantages-title {
+    transform: translateX(20px); /* Start from the right */
+  }
+  
+  .advantages-subtitle {
+    transform: translateX(-20px); /* Start from the left */
+  }
+  
+  .advantages-title:hover,
+  .advantages-subtitle:hover {
+    opacity: 1; /* Fully visible on hover */
+  }
+  
+  .advantages-title:hover {
+    transform: translateX(0); /* Move to original position on hover */
+  }
+  
+  .advantages-subtitle:hover {
+    transform: translateX(0); /* Move to original position on hover */
+  }
+  @keyframes fadeRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px); /* Start from the right */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End at original position */
+    }
+  }
+  
+  @keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px); /* Start from the left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End at original position */
+    }
+  }
+ /* Advantages Section */
+ .advantages {
+    
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 20px;
+    height: auto;
+    align-items: center;
+  }
+  .advantages-item-1 {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .advantages-logo {
+    padding-top: 0px;
+  }
+  .advantages-logo img {
+    width: 50px;
+    height: auto;
+  }
+  .advantages-title {
+    font-size: 18px;
+  }
+  .advantages-subtitle {
+    font-size: 14px;
+  }
+/* Advantages Section */
+.advantages-item-1 {
+    text-align: center;
+  }
+  .advantages-logo img {
+    width: 40px;
+  }
+  .advantages-title {
+    font-size: 14px;
+  }
+  .advantages-subtitle {
+    font-size: 12px;
+  }
+  

@@ -1,0 +1,306 @@
+/*---------section---1---------------------------------------------------*/
+
+.section-container {
+    display: flex;
+  }
+  .nav_container-section,
+  .nav_container-product,
+  .nav_container-advantages{
+    margin-top: -75px;
+    padding-top: 75px;
+  }
+  
+  .element-1 {
+    margin: 44px 20px 45px 130px;
+    background-image: url(../../../public/img/section-1/1.jpg);
+    width: 380px;
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 0.3s ease; /* Smooth transition for blur effect */
+  }
+  
+  .element-1 {
+    background-image: url(../../../public/img/section-1/1.jpg);
+    
+  }
+  
+  .element-2 {
+    margin: 44px 40px 45px 0px;
+    background-image: url(../../../public/img/section-1/2.jpg);
+    width: 380px;
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .element-2 {
+    margin-left: 40px; /* Увеличенный отступ для второго элемента */
+    background-image: url(../../../public/img/section-1/2.jpg);
+  }
+  .element-1:hover,
+  .element-2:hover {
+    filter: blur(5px); /* Apply blur effect on hover */
+  }
+  
+  
+  .element-3-title {
+    margin-top: 111px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .element-3-subtitle {
+    margin-top: 21px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  .element-3-button-button {
+    margin-top: 18px;
+    background: #ff4a32;
+    border-radius: 35px;
+    height: 33px;
+    width: 101px;
+  }
+  
+  .element-3-button-link {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .elem-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  @media (max-width: 1120px) {
+    .section-container {
+      margin: 40px 0px;
+      display: flex;
+      gap: 10px;
+      padding: 0px 20px;
+      align-items: center;
+    }
+    .elem-container {
+      flex: 1 1 auto;
+      justify-content: space-between;
+    }
+    .element-3-title {
+      margin-top: 0px;
+    }
+    .element-1,
+    .element-2 {
+      margin: unset;
+      width: auto;
+      flex: 1 1 auto;
+    }
+  }
+  @media (max-width: 900px) {
+    .section-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .elem-container {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .elem-container {
+      flex-direction: column;
+    }
+    .element-1,
+    .element-2 {
+      width: 100%;
+    }
+  }
+  /** -------CARDS------------------- */
+
+.cards__container {
+    display: flex;
+  }
+  
+  .overlay-cards {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 30, 33, 0.3);
+  }
+  
+  /*--------CARD___1-------- */
+  
+  .card__1 {
+    overflow: hidden;
+  }
+  
+  .card-1-link {
+    text-decoration: none;
+  }
+  
+  .card__1__img {
+    background-image: url(../../../public/img/section-2/1.jpg.jpeg);
+    width: 480px;
+    height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card__1__img:hover {
+    transform: scale(1.1);
+  }
+  
+  .card__1__title {
+    font-weight: 700;
+    padding-top: 208px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .card__1__subtitle {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /*--------CARD___2-------- */
+  
+  .card__2 {
+    overflow: hidden;
+  }
+  .card-2-link {
+    text-decoration: none;
+  }
+  .card__2__img {
+    background-image: url(../../../public/img/section-2/2.jpg.jpeg);
+    width: 480px;
+    height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card__2__img:hover {
+    transform: scale(1.1);
+  }
+  
+  .card__2__title {
+    font-weight: 700;
+    padding-top: 208px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .card__2__subtitle {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /*--------CARD___3-------- */
+  
+  .card__3 {
+    overflow: hidden;
+  }
+  .card-3-link {
+    text-decoration: none;
+  }
+  .card__3__img {
+    background-image: url(../../../public/img/section-2/3.jpeg);
+    width: 480px;
+    height: 480px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card__3__img:hover {
+    transform: scale(1.1);
+  }
+  
+  .card__3__title {
+    font-weight: 700;
+    padding-top: 208px;
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .card__3__subtitle {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+  }
+  @media (max-width: 1120px) {
+    .card__1,
+    .card__2,
+    .card__3 {
+      width: 33%;
+    }
+    .card__1__img,
+    .card__2__img,
+    .card__3__img {
+      width: 100%;
+    }
+  }
+  /* Media Query for screens up to 768px */
+  @media (max-width: 768px) {
+    /* Section Container */
+    .section-container {
+      padding: 20px;
+    }
+    .element-3-title {
+      font-size: 24px;
+      text-align: center;
+    }
+    .element-3-subtitle {
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .element-3-button {
+      text-align: center;
+    }
+    .element-3-button-button {
+      width: 100%;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /* Cards Container */
+    .cards__container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card__1,
+    .card__2,
+    .card__3,
+    .card__1__img,
+    .card__2__img,
+    .card__3__img {
+      width: 100%;
+    }
+    .overlay-cards {
+      text-align: center;
+    }
+  }
