@@ -1,5 +1,8 @@
 import './secondBanner.css';
-export default function  SecondBannerComp(){
+import React from 'react';
+class SecondBannerComp extends React.Component{
+  render(){
+
     return(
         <div class="second-banner">
       <div class="_container">
@@ -49,4 +52,6 @@ export default function  SecondBannerComp(){
       </div>
     </div>
     )
+  }
 }
+export default SecondBannerComp 

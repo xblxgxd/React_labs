@@ -1,5 +1,8 @@
 import './header.css';
-export default function  HeaderComp(){  
+import React from 'react';
+class HeaderComp extends React.Component{  
+  render(){
+
     return(
         <header class="header">
       <div class="left-container">
@@ -142,7 +145,9 @@ export default function  HeaderComp(){
       </nav>
     </header>
     )
+  }
 }
+export default HeaderComp 
 
 
 

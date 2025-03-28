@@ -1,5 +1,8 @@
 import './productsContainer.css';
-export default function  ProductsContainerComp(){
+import React from 'react';
+class ProductsContainerComp extends React.Component{
+  render(){
+
     return(
         <section id="products-container" class="nav_section-products">
       <div class="products-container">
@@ -35,4 +38,6 @@ export default function  ProductsContainerComp(){
       </div>
     </section>
     )
+  }
 }
+export default ProductsContainerComp 

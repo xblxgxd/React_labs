@@ -1,5 +1,8 @@
 import './footer.css';
-export default function FooterComp(){
+import React from 'react';
+class FooterComp extends React.Component{
+  render(){
+
     return(
         <footer>
         <div class="footer-container">
@@ -76,4 +79,6 @@ export default function FooterComp(){
         </section>
       </footer>  
     )
+  }
 }
+export default FooterComp 

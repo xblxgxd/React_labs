@@ -1,5 +1,8 @@
 import './thirdBanner.css';
-export default function  ThirdBannerComp(){
+import React from 'react';
+class ThirdBannerComp extends React.Component{
+  render(){
+
     return(
         <div class="third-banner-container">
       <div class="third-banner-sub-title-1" id="performance">High-performance</div>
@@ -19,4 +22,6 @@ export default function  ThirdBannerComp(){
       </div>
     </div>
     )
+  }
 }
+export default ThirdBannerComp

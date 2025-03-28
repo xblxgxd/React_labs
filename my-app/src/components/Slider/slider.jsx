@@ -1,5 +1,8 @@
 import './slider.css';
-export default function SliderComp(){
+import React from 'react';
+class SliderComp extends React.Component{
+  render(){
+
     return (
         <section id="product-container" class="nav_container-product">
         <button class="arrow arrow-left" onclick="moveSlide(-1)">&#10094;</button>
@@ -75,4 +78,6 @@ export default function SliderComp(){
         <button class="arrow arrow-right" onclick="moveSlide(1)">&#10095;</button>
       </section>
     )
+  }
 }
+export default SliderComp 

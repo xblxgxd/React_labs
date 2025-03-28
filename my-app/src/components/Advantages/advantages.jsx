@@ -1,5 +1,8 @@
 import './advantages.css';
-export default function AdvantagesComp(){
+import React from 'react';
+class AdvantagesComp extends React.Component{
+  render(){
+
     return(
         <section id="advantages" class="nav_container-advantages">
       <div class="advantages">
@@ -46,4 +49,6 @@ export default function AdvantagesComp(){
       </div>
     </section>
     )
+  }
 }
+export default AdvantagesComp 

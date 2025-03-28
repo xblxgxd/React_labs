@@ -1,5 +1,8 @@
 import './sectionContainer.css';
-export default function  SectionContainerComp(){
+import React from 'react';
+class SectionContainerComp extends React.Component{
+  render(){
+
     return(
         
     <section id="main-section-container"> 
@@ -61,4 +64,6 @@ export default function  SectionContainerComp(){
       </section>
     </section> 
     )
+  }
 }
+export default SectionContainerComp
