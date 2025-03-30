@@ -1,7 +1,7 @@
 import './header.css';
 import React from 'react';
-class HeaderComp extends React.Component{  
-  render(){
+import { Link, useLocation } from "react-router-dom";
+const HeaderComp = () =>{  
 
     return(
         <header class="header">
@@ -16,7 +16,7 @@ class HeaderComp extends React.Component{
 
         <ul class="header-links-wrapper desktop">
           <li>
-          <a class="header-link" href="#products-container" id="skateboards">Electric Skateboards</a>
+          <Link to="Skateboards" className="header-link"  data-i18="skateboards">Electric Skateboards</Link>
         </li>
           <li>
             <a class="header-link jump" href="#section-container"
@@ -24,13 +24,13 @@ class HeaderComp extends React.Component{
             >
           </li>
           <li>
-            <a class="header-link" href="#product-container" id="accessories">Accessories</a>
+            <Link to="Accessories" className="header-link"  data-i18="accessories">Accessories</Link>
           </li>
           <li >
-            <a class="header-link" href="#" id="gift">Gift Card</a>
+            <Link className="header-link"  data-i18="main">Main</Link>
           </li>
           <li >
-            <a class="header-link" href="#advantages" id="info">More Info</a>
+            <a class="header-link"  data-i18="info">More Info</a>
           </li>
         </ul>
       </div>
@@ -146,7 +146,7 @@ class HeaderComp extends React.Component{
     </header>
     )
   }
-}
+
 export default HeaderComp 
 
 
