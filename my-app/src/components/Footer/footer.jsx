@@ -1,7 +1,7 @@
 import './footer.css';
 import React from 'react';
-class FooterComp extends React.Component{
-  render(){
+const FooterComp = () =>{
+  
 
     return(
         <footer>
@@ -79,6 +79,6 @@ class FooterComp extends React.Component{
         </section>
       </footer>  
     )
-  }
+  
 }
 export default FooterComp 

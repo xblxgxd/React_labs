@@ -1,7 +1,7 @@
 import './video.css';
 import React from 'react';
-class VideoComp extends React.Component {
-    render(){
+const VideoComp = () =>  {
+    
         
         return (
             <section className="section-video">
@@ -23,6 +23,6 @@ class VideoComp extends React.Component {
                 </div>
             </section>
         );
-    }
+  
 }
 export default VideoComp

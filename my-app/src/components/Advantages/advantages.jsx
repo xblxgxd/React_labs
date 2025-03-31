@@ -1,7 +1,8 @@
 import './advantages.css';
 import React from 'react';
-class AdvantagesComp extends React.Component{
-  render(){
+
+const AdvantagesComp = () => {
+  
 
     return(
         <section id="advantages" class="nav_container-advantages">
@@ -49,6 +50,6 @@ class AdvantagesComp extends React.Component{
       </div>
     </section>
     )
-  }
+  
 }
 export default AdvantagesComp 

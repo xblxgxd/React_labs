@@ -1,7 +1,7 @@
 import './sectionContainer.css';
 import React from 'react';
-class SectionContainerComp extends React.Component{
-  render(){
+const SectionContainerComp = () =>{
+  
 
     return(
         
@@ -64,6 +64,6 @@ class SectionContainerComp extends React.Component{
       </section>
     </section> 
     )
-  }
+  
 }
 export default SectionContainerComp

@@ -1,7 +1,7 @@
 import './cooperationblock.css'
 import React from 'react';
-class CooperationBlockComp extends React.Component{
-  render(){
+const CooperationBlockComp = () => {
+  
 
     return(
         <div class="cooperation-block">
@@ -27,6 +27,6 @@ class CooperationBlockComp extends React.Component{
       </div>
     </div>
     )
-  }
+  
 }
 export default CooperationBlockComp 

@@ -1,7 +1,8 @@
 import './secondBanner.css';
 import React from 'react';
-class SecondBannerComp extends React.Component{
-  render(){
+
+const SecondBannerComp = () =>{
+
 
     return(
         <div class="second-banner">
@@ -52,6 +53,6 @@ class SecondBannerComp extends React.Component{
       </div>
     </div>
     )
-  }
+  
 }
 export default SecondBannerComp 

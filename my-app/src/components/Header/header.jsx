@@ -16,7 +16,7 @@ const HeaderComp = () =>{
 
         <ul class="header-links-wrapper desktop">
           <li>
-          <Link to="Skateboards" className="header-link"  data-i18="skateboards">Electric Skateboards</Link>
+          <Link to="/skateboards" className="header-link"  data-i18="skateboards">Electric Skateboards</Link>
         </li>
           <li>
             <a class="header-link jump" href="#section-container"
@@ -24,13 +24,13 @@ const HeaderComp = () =>{
             >
           </li>
           <li>
-            <Link to="Accessories" className="header-link"  data-i18="accessories">Accessories</Link>
+            <Link to="/accessories" className="header-link"  data-i18="accessories">Accessories</Link>
           </li>
           <li >
-            <Link className="header-link"  data-i18="main">Main</Link>
+            <Link to="/" className="header-link"  data-i18="main">Main</Link>
           </li>
           <li >
-            <a class="header-link"  data-i18="info">More Info</a>
+            <Link to="/info" className="header-link"  data-i18="info">More Info</Link>
           </li>
         </ul>
       </div>

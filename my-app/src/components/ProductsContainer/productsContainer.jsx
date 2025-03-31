@@ -1,7 +1,7 @@
 import './productsContainer.css';
 import React from 'react';
-class ProductsContainerComp extends React.Component{
-  render(){
+const ProductsContainerComp = () => {
+  
 
     return(
         <section id="products-container" class="nav_section-products">
@@ -38,6 +38,6 @@ class ProductsContainerComp extends React.Component{
       </div>
     </section>
     )
-  }
+
 }
 export default ProductsContainerComp 
